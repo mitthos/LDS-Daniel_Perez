@@ -1,17 +1,30 @@
 main {
   grid-area: main;
+  padding: 1rem;
   section {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-around;
-    .main-p {
-        text-align: justify;
-      }
   }
 }  
-  .main-p {
-    text-align: justify;
-  }
+
+
+.txt-area-main {
+  display: flex;
+  padding: 1rem;
+  margin: 2rem;
+  align-items: center;
+  text-align: justify
+}
+
+.iframe-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 2rem;
+}
+
 
   iframe {
     width: 30rem;

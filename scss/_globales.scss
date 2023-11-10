@@ -8,12 +8,14 @@ body {
 
   .grid-container {
     height: 100vh;
-    /* background-color: aquamarine; */
-    display: grid ;
-    grid-template-rows: 0.2fr auto 0.2fr;
+    display: grid;
+    grid-template-rows: 0.2fr auto 0.1fr;
+    grid-template-columns: 0.5fr auto 0.5fr;
     grid-template-areas: 
-      "header "
-      "main "
-      "footer "
+        "header header header"
+        "main main main"
+        "footer footer footer"
     ;
-  }
+    row-gap: 10px;
+    column-gap: 10px;
+}
