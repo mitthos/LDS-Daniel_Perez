@@ -1,0 +1,243 @@
+/*Globales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+.boton-federaciones {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.boton-federaciones:hover {
+  background-color: #fff;
+  text-decoration: dashed;
+  color: #3498db;
+  animation: movimiento 0.7s ease-in-out both;
+}
+
+.boton-torneos {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #3498db;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.boton-torneos:hover {
+  background-color: #3498db;
+  text-decoration: dashed;
+  color: #fff;
+  animation: movimiento 0.7s ease-in-out both;
+}
+
+.boton-contacto {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  background-color: lightblue;
+  color: darkblue;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.boton-contacto:hover {
+  background-color: darkblue;
+  text-decoration: dotted;
+  color: lightblue;
+  animation: movimiento 0.7s ease-in-out both;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: darkblue;
+}
+
+.grid-container {
+  height: 100vh;
+  /* background-color: aquamarine; */
+  display: grid;
+  grid-template-rows: 0.2fr auto 0.2fr;
+  grid-template-areas: "header " "main " "footer ";
+}
+
+/**********Comunes**********/
+/*HEADER*/
+.header {
+  grid-area: header;
+  background-image: url("../assets/banner3.avif");
+  background-size: cover;
+}
+.header .logo-header {
+  height: 200px;
+}
+.header .div-logo {
+  display: inline-block;
+  width: 20%;
+}
+.header .txt-header {
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+}
+
+/*MAIN*/
+main {
+  grid-area: main;
+}
+main section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main section .main-p {
+  text-align: justify;
+}
+
+.main-p {
+  text-align: justify;
+}
+
+iframe {
+  width: 30rem;
+  height: 20rem;
+}
+
+/*FOOTER*/
+footer {
+  background-image: url("../assets/banner3.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  grid-area: footer;
+}
+.footer .logo-footer {
+  height: 120px;
+}
+
+/******Particulares*******/
+.nosotros-main {
+  /* display: inline-block; */
+  padding: 15px;
+  vertical-align: middle;
+  min-width: 33%;
+  text-align: center;
+}
+.nosotros-main .nosotros-article {
+  display: inline-block;
+  vertical-align: middle;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size: 400;
+  padding: 15px 150px 15px 150px;
+}
+.nosotros-main .nosotros-article .nosotros-text {
+  text-align: justify;
+}
+.nosotros-main .nosotros-article .nosstros-img {
+  height: 300px;
+}
+
+.lbl-contacto {
+  display: block;
+  text-align: center;
+}
+
+.contacto-main {
+  display: block;
+  padding: 15px;
+  min-width: 33%;
+  text-align: center;
+}
+.contacto-main .contact-input {
+  width: 20rem;
+}
+.contacto-main .contact-area {
+  width: 30rem;
+}
+
+.contacto-article {
+  display: block;
+  text-align: left;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size: 400;
+  padding: 15px 150px 15px 150px;
+}
+
+.contacto-logo {
+  display: inline-block;
+  width: 20%;
+  align-items: center;
+}
+.contacto-logo .con-logo {
+  height: 200px;
+}
+
+@media (max-width: 576px) {
+  main section {
+    display: block;
+    text-align: center;
+  }
+  iframe {
+    width: 20rem;
+    height: 15rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  main section {
+    display: block;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 995px) {
+  main section {
+    display: block;
+    text-align: center;
+  }
+}
+@media (min-width: 996px) and (max-width: 1200px) {
+  main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section .main-p {
+    text-align: justify;
+  }
+}
+@media (min-width: 1200px) {
+  main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section .main-p {
+    text-align: justify;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
